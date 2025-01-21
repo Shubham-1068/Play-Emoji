@@ -2,7 +2,7 @@ import data from "./dataSet.js";
 
 let dataSet = data;
 
-function textToEmoji(text, extaData) {
+export function textToEmoji(text, extaData) {
 
     if(extaData){
         dataSet = {...dataSet, ...extaData};
@@ -30,5 +30,3 @@ function textToEmoji(text, extaData) {
     return result;
         
 }
-
-export default textToEmoji;
